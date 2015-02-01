@@ -1,0 +1,82 @@
+body {
+  background-color: #000000;
+  color: #FFFFFF; 
+  font-family: 'PT Sans', sans-serif;
+  background-image: url('../img/dark_geometric_@2x.png');
+  background-size: 5%;
+}
+
+a {
+  color: #05a6cc;
+  text-decoration: none;
+}
+.lighter {
+  color: #CCCCCC;
+}
+
+
+.header {
+  background-image: url('../img/logo-03.png');
+  width: 466px;
+  height: 230px;
+}
+
+.header h1{
+  display: none;
+}
+
+.button {
+  background: #05a6cc;
+  padding: 10px;
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin: 0px 10px;
+  border-radius: 25px;  
+  text-alignment: center;
+  vertical-align: middle;
+  
+}
+
+.button a{
+  color: #000000;
+  text-decoration: none;
+}
+
+#container {
+  display: block;
+  min-height: 100%;
+  width: 1060px;
+  margin: 50px auto;
+  height: 620px;
+}
+
+#alpha {
+  width: 600px;
+  
+}
+#beta {
+  width: 350px;
+}
+
+.column {
+  padding: 5px 10px 5px 40px;
+  display: block;
+  float: left;
+  max-height: 600px;
+}
+
+.site-title {
+  font-variant: small-caps;
+}
+
+#footer {
+  width: 100%;
+  margin: 60px auto 40px;
+}
+
+#footer p{
+  text-align: center;
+  font-size: 9pt;
+  color: #333;
+}
