@@ -16,7 +16,6 @@ a {
 
 
 .header {
-  background-image: url('../img/logo-03.png');
   width: 466px;
   height: 230px;
 }
@@ -26,20 +25,35 @@ a {
 }
 
 .button {
-  background: #05a6cc;
   padding: 10px;
   float: left;
   width: 150px;
-  height: 100px;
+  height: 80px;
   margin: 0px 10px;
-  border-radius: 25px;  
-  text-alignment: center;
-  vertical-align: middle;
-  
+  border-radius: 5px;  
+  text-align: center;
+  vertical-align: middle;  
 }
 
+/* green */
+.button.first {
+  background-color: #C9C926;
+}
+
+/* blue */
+.button.second {
+  background-color: #05a6cc;
+}
+
+/* orange */
+.button.third {
+  background-color: #EF603A;
+}
+
+
+
 .button a{
-  color: #000000;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -63,20 +77,124 @@ a {
   padding: 5px 10px 5px 40px;
   display: block;
   float: left;
-  max-height: 600px;
 }
 
 .site-title {
-  font-variant: small-caps;
+  color: #05a6cc;
 }
 
 #footer {
   width: 100%;
-  margin: 60px auto 40px;
+  margin: 80px auto 40px;
 }
 
 #footer p{
   text-align: center;
   font-size: 9pt;
   color: #333;
+}
+
+.action {
+  margin: 20px auto;
+}
+
+.breaker .portion {
+  border-top-style: solid;
+  border-color: #FFF;
+  width: 42%;
+  float: left;
+  margin: 9px 0px 0px 0px;
+  border-width: 2px;
+}
+
+.breaker {
+  height: 20px;
+  display: block;
+  padding-top: 10px;
+}
+
+.breaker span {
+  float: left;
+  margin: 0px 15px;
+  font-variant: small-caps;
+}
+
+.clear {
+  clear: both;
+}
+
+.twitter-timeline {
+  margin: 0px auto;
+  display: block;
+}
+
+
+/* medium style */
+@media (max-width: 1080px) and (min-width: 750px){
+  #container {
+    width: 100%;
+  }
+  
+  #alpha {
+    width: 90%;
+  }
+  
+  #beta {
+    margin: 50px auto 0px auto;
+    width: 90%;
+  }
+  
+  .column {
+    padding: 0px;
+    margin: 10px;
+  }
+  
+  .button {
+    width: 180px;
+  }
+}
+
+/* mobile */
+@media(max-width: 750px) and (min-width: 0px){
+  #container {
+    width: 100%;
+  }
+  
+  #alpha {
+    width: 100%;
+  }
+  
+  #beta {
+    width: 100%;
+  }
+  
+  .column {
+    padding: 5px 0px;
+    display: block;
+    max-height: 800px;
+  }
+  
+  .button {
+    width: 95%;
+    height: 45px;
+    margin: 10px auto;
+  }
+  .header {
+    height: auto;
+  }
+  .header img{
+    width: 80%;
+    height: auto;
+  }
+  
+  .breaker .portion {
+    visibility: hidden;
+  }
+  
+  .breaker span {
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px;
+    font-size: 28px;
+  }
 }
